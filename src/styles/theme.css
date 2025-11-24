@@ -1,0 +1,51 @@
+/* styles/theme.css */
+:root {
+  --primary-color: #d39b53;
+  --primary-light: #e8b86c;
+  --primary-dark: #b8863b;
+  --primary-50: #fdf8f3;
+  --primary-100: #f9f0e6;
+  --primary-200: #f2e0c9;
+  --primary-300: #e8c99c;
+  --primary-400: #d39b53;
+  --primary-500: #c78a3a;
+  --primary-600: #b8762f;
+  --primary-700: #985e29;
+  --primary-800: #7a4b26;
+  --primary-900: #643e23;
+}
+
+.theme-bg-primary { background-color: var(--primary-color) !important; }
+.theme-bg-primary-light { background-color: var(--primary-light) !important; }
+.theme-bg-primary-dark { background-color: var(--primary-dark) !important; }
+
+.theme-text-primary { color: var(--primary-color) !important; }
+.theme-text-primary-light { color: var(--primary-light) !important; }
+.theme-text-primary-dark { color: var(--primary-dark) !important; }
+
+.theme-border-primary { border-color: var(--primary-color) !important; }
+.theme-border-primary-light { border-color: var(--primary-light) !important; }
+
+.theme-gradient-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light)) !important;
+}
+
+.theme-gradient-primary-to-dark {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)) !important;
+}
+
+/* Focus states */
+.theme-focus:focus {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 3px rgba(211, 155, 83, 0.1) !important;
+  outline: none !important;
+}
+
+/* Hover states */
+.theme-hover:hover {
+  background-color: var(--primary-dark) !important;
+}
+
+.theme-hover-text:hover {
+  color: var(--primary-dark) !important;
+}
